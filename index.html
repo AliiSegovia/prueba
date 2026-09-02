@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página con Tailwind</title>
+  <!-- Tailwind CSS por CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+  <!-- HEADER -->
+  <header class="bg-blue-500 text-white p-4 text-center text-2xl font-bold shadow-md">
+    Mi Página con Tailwind
+  </header>
+
+  <!-- SECCIÓN PRINCIPAL (GRID RESPONSIVO Y CARDS) -->
+  <section class="container mx-auto p-6 flex-grow">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- TARJETA 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 flex flex-col justify-between">
+        <div>
+          <h2 class="text-xl font-bold text-gray-800 mb-2">Sección 1</h2>
+          <p class="text-gray-700 text-sm mb-4">Descripción de la sección.</p>
+        </div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300 font-medium self-start">
+          Comprar
+        </button>
+      </div>
+
+      <!-- TARJETA 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 flex flex-col justify-between">
+        <div>
+          <h2 class="text-xl font-bold text-gray-800 mb-2">Sección 2</h2>
+          <p class="text-gray-700 text-sm mb-4">Descripción de la sección.</p>
+        </div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300 font-medium self-start">
+          Comprar
+        </button>
+      </div>
+
+      <!-- TARJETA 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 flex flex-col justify-between">
+        <div>
+          <h2 class="text-xl font-bold text-gray-800 mb-2">Sección 3</h2>
+          <p class="text-gray-700 text-sm mb-4">Descripción de la sección.</p>
+        </div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300 font-medium self-start">
+          Comprar
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-auto">
+    © 2025 - Mi Web Tailwind
+  </footer>
+
+</body>
+</html>
